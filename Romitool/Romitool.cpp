@@ -51,6 +51,9 @@ BOOL CRomitoolApp::InitInstance()
 
 	CWinApp::InitInstance();
 
+	//CRichEdit2.0 need init, Romitelli
+	AfxInitRichEdit2();
+
 
 	AfxEnableControlContainer();
 

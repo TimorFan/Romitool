@@ -4,6 +4,10 @@
 
 #pragma once
 
+#include "CommonFunc.h"
+#include "afxcmn.h"
+#include "MainTab_Mp.h"
+#include "MainTab_Info.h"
 
 // CRomitoolDlg ¶Ô»°¿ò
 class CRomitoolDlg : public CDialogEx
@@ -31,4 +35,17 @@ protected:
 	afx_msg void OnPaint();
 	afx_msg HCURSOR OnQueryDragIcon();
 	DECLARE_MESSAGE_MAP()
+public:
+	CTabCtrl m_TabMainFrame;
+	CMainTab_Mp m_TabMp;
+	CMainTab_Info m_TabInfo;
+	CMenu m_Menu;
+
+
+	//init func
+	void MainTabControlInit(void);
+
+	//afx mesage func
+	afx_msg void OnTcnSelTabChange(NMHDR *pNMHDR, LRESULT *pResult);
+
 };

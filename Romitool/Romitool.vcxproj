@@ -187,13 +187,23 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CommonFunc.h" />
+    <ClInclude Include="MainTab_Info.h" />
+    <ClInclude Include="MainTab_Mp.h" />
+    <ClInclude Include="MpParamDlg.h" />
+    <ClInclude Include="MpTestDlg.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Romitool.h" />
     <ClInclude Include="RomitoolDlg.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="Typedef.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="MainTab_Info.cpp" />
+    <ClCompile Include="MainTab_Mp.cpp" />
+    <ClCompile Include="MpParamDlg.cpp" />
+    <ClCompile Include="MpTestDlg.cpp" />
     <ClCompile Include="Romitool.cpp" />
     <ClCompile Include="RomitoolDlg.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -210,9 +220,15 @@
     <None Include="res\Romitool.rc2" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="res\Alfa_icon_.ico" />
     <Image Include="res\Romitool.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Romitool.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>
