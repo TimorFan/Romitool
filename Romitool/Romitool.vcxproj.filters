@@ -51,6 +51,18 @@
     <ClInclude Include="MpParamDlg.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="spti.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ntddscsi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="devioctl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdddisk.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Romitool.cpp">
@@ -72,6 +84,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="MpParamDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonFunc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spti.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

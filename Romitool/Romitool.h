@@ -9,7 +9,7 @@
 #endif
 
 #include "resource.h"		// 主符号
-
+#include "CommonFunc.h"
 
 // CRomitoolApp: 
 // 有关此类的实现，请参阅 Romitool.cpp

@@ -1,5 +1,6 @@
 #pragma once
-
+#include "CommonFunc.h"
+#include "afxcmn.h"
 
 // CMpTestDlg 对话框
 
@@ -20,6 +21,16 @@ protected:
 	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV 支持
 
 	DECLARE_MESSAGE_MAP()
+
 public:
 	virtual BOOL OnInitDialog();
+	afx_msg void OnBnClickedButtonMpScan();
+
+public:
+	u08 u08MpMode;
+	CRichEditCtrl m_CRichEditTestStatus;
+	CRichEditCtrl m_CRichEditTestMsg;
+
+	void GetDevPath(void);
+
 };
